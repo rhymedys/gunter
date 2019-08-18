@@ -1,8 +1,8 @@
 <template>
   <div  class="gante-tr-box">
-    <div class="gante-tr-one" v-for="(tr,index) in data">
+    <div class="gante-tr-one" v-for="(tr,index) in data" :key="tr">
       <div class="gante-tr">
-        <div class="gante-td" v-for="(th,key) in th_data">
+        <div class="gante-td" v-for="(th,key) in th_data" :key="key">
           <td-cell @change-calendar="change_calendar" @on-click="onclick" @change="change" :td_data="tr" :index="index" :key_value="key" :th="th"></td-cell>
         </div>
       </div>

@@ -129,16 +129,14 @@
         },
       ],
       th_data = {
-        title:{value:'任务名称',width:80,showToast:false,listen_click:true},
-        startTime:{value:'开始时间',width:150,showToast:true,chooseTime:true,time_mode:1},
-        endTime:{value:'结束时间',width:150,showToast:true,chooseTime:true,time_mode:2},
-        biaoti:{value:'内容',width:450,shrink:true,showToast:true,edit:true}}
+        title:{value:'任务名称',width:80,showToast:false,listen_click:true}
+      }
       this.$gante({
         container:'.gante',
         ganteData:data,
         start_time:new Date('2018/12/15').getTime(),
         end_time:new Date('2019/2/4').getTime(),
-        tabe_width:'calc(100% - 600px)',
+        tabe_width:'80px',
         open:true,
         height:'400px',
         time_mode:1,
